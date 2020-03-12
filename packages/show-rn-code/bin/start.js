@@ -12,16 +12,17 @@ Promise.all([
     path.resolve(__dirname, '../node_modules/ts-loader/index.js')
 ].map(url => new Promise(res => {
     fs.exists(url, function (exists) {
-        res(exists)
+        res([exists,url])
     }) 
 }))).then(v => {
-    const tsloader = v.find(v => v)
+    const tsloader = v.find(v => v[0])
 
     if (!tsloader) return console.error("Can't Find ts-loader!!!")
 
 
     const compiler = Webpack(webpackConfig(
         path.resolve(process.cwd(), './app.tsx'),
+        tsloader[1],
         path.resolve(__dirname, '../tsconfig.json'),
     ))
 

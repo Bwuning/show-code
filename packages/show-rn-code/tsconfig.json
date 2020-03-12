@@ -18,9 +18,9 @@
     "isolatedModules": true,
     "noEmit": false,
     "jsx": "react",
-    "declaration": true,
+    "declaration": true
   },
   "exclude": [
-    "**/*.js",
+    "**/*.js"
   ]
 }
