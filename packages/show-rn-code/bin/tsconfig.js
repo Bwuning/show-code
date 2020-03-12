@@ -1,4 +1,4 @@
-
+#!/usr/bin/env node
 var tsconfig = require('../tsconfig.build.js');
 var fs = require('fs');
 var path = require('path')
