@@ -6,14 +6,14 @@ const path = require('path')
 var fs = require("fs");
 
 
-;
+;// 根据不同的安装形式，两种不同的 ts-loader 路径
 Promise.all([
     path.resolve(__dirname, '../../ts-loader/index.js'),
     path.resolve(__dirname, '../node_modules/ts-loader/index.js')
 ].map(url => new Promise(res => {
     fs.exists(url, function (exists) {
         res(exists)
-    })
+    }) 
 }))).then(v => {
     const tsloader = v.find(v => v)
 
