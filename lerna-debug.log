@@ -1,0 +1,9 @@
+46 error Error: Command failed: git push --follow-tags --no-verify --atomic origin master
+46 error fatal: HttpRequestException encountered.
+46 error    ��������ʱ������
+46 error bash: /dev/tty: No such device or address
+46 error error: failed to execute prompt script (exit code 1)
+46 error fatal: could not read Username for 'https://github.com': No such file or directory
+46 error
+46 error     at makeError (C:\Users\bwuni\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:174:9)
+46 error     at C:\Users\bwuni\AppData\Roaming\npm\node_modules\lerna\node_modules\execa\index.js:278:16
