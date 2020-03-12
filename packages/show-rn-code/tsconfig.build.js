@@ -1,4 +1,4 @@
-{
+module.exports = {
   "compilerOptions": {
     "target": "es5",
     "lib": [
@@ -16,10 +16,11 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react"
+    "noEmit": false,
+    "jsx": "react",
+    "declaration": true,
   },
-  "include": [
-    "src"
+  "exclude": [
+    "**/*.js",
   ]
 }

@@ -1,13 +1,26 @@
-import './App.css';
+import './App.scss';
 
 import React from 'react';
-import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+import { Layout, Menu, Breadcrumb} from 'antd';
+import { createFromIconfontCN } from '@ant-design/icons';
+
+const Icon = createFromIconfontCN({
+  scriptUrl: '//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js',
+});
 
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
 
 
-export default () => {
+type Props = {
+  target?:React.FC
+}
+
+const App :React.FC<Props> = (
+  props:Props
+) => {
+  const Node = props.target
+  //return (<div>hello world!!! {Node?<Node></Node>:''}</div>)
   return (<Layout style={{ height: '100%' }}>
     <Header className="header">
       <div className="logo" />
@@ -80,9 +93,13 @@ export default () => {
             </SubMenu>
           </Menu>
         </Sider>
-        <Content style={{ padding: '0 24px', minHeight: 280 }}>Content</Content>
+        <Content style={{ padding: '0 24px', minHeight: 280 }}>
+          {Node?<Node></Node>:''}
+        </Content>
       </Layout>
     </Content>
     <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
   </Layout>)
 } 
+
+export default App

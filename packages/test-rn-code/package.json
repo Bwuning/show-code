@@ -1,0 +1,18 @@
+{
+  "name": "test-rn-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./node_modules/show-rn-code/bin/start.js",
+    "tsconfig": "node ./node_modules/show-rn-code/bin/tsconfig.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^16.9.23",
+    "react": "^16.13.0",
+    "show-rn-code": "^1.0.0"
+  }
+}
