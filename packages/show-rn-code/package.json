@@ -1,6 +1,6 @@
 {
   "name": "show-rn-code",
-  "version": "0.0.8-alpha.0",
+  "version": "0.0.9-alpha.0",
   "description": "",
   "main": "dist/bundle.cjs.js",
   "scripts": {
@@ -17,14 +17,14 @@
     "@rollup/plugin-commonjs": "^11.0.2",
     "@types/node": "^13.9.0",
     "@types/webpack": "^4.41.7",
+    "less": "^3.11.1",
+    "node-sass": "^4.13.1",
     "rollup": "^2.0.2",
     "rollup-plugin-postcss": "^2.3.0",
     "rollup-plugin-typescript2": "^0.26.0",
     "rollup-plugin-uglify": "^6.0.4",
-    "ts-node": "^8.6.2",
-    "less": "^3.11.1",
-    "node-sass": "^4.13.1",
-    "stylus": "^0.54.7"
+    "stylus": "^0.54.7",
+    "ts-node": "^8.6.2"
   },
   "dependencies": {
     "@types/antd": "^1.0.0",
