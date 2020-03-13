@@ -21,7 +21,10 @@
     "rollup-plugin-postcss": "^2.3.0",
     "rollup-plugin-typescript2": "^0.26.0",
     "rollup-plugin-uglify": "^6.0.4",
-    "ts-node": "^8.6.2"
+    "ts-node": "^8.6.2",
+    "less": "^3.11.1",
+    "node-sass": "^4.13.1",
+    "stylus": "^0.54.7"
   },
   "dependencies": {
     "@types/antd": "^1.0.0",
@@ -29,11 +32,8 @@
     "@types/react-dom": "^16.9.5",
     "antd": "^4.0.1",
     "html-webpack-plugin": "^3.2.0",
-    "less": "^3.11.1",
-    "node-sass": "^4.13.1",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
-    "stylus": "^0.54.7",
     "ts-loader": "^6.2.1",
     "tsconfig-paths-webpack-plugin": "^3.2.0",
     "typescript": "^3.8.3",
